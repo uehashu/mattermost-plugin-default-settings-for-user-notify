@@ -4,9 +4,9 @@
   "description": "This is the plugin to edit default settings for notify after creating user.",
   "homepage_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify",
   "support_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify/issues",
-  "release_notes_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify/releases/v0.1.0",
-  "version": "0.1.0",
-  "min_server_version": "7.2.0",
+  "release_notes_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify/releases/v0.1.1",
+  "version": "0.1.1",
+  "min_server_version": "7.0.0",
   "server": {
     "executables": {
       "linux-amd64": "server/dist/plugin-linux-amd64",
