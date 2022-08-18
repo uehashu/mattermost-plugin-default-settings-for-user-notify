@@ -1,0 +1,63 @@
+{
+  "id": "org.ishidatami.mattermost.default-settings-for-user-notify",
+  "name": "Default Settings For User Notify",
+  "description": "This is the plugin to edit default settings for notify after creating user.",
+  "homepage_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify",
+  "support_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify/issues",
+  "release_notes_url": "https://github.com/uehashu/mattermost-plugin-default-settings-for-user-notify/releases/v0.1.0",
+  "version": "0.1.0",
+  "min_server_version": "7.2.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64",
+      "darwin-amd64": "server/dist/plugin-darwin-amd64",
+      "darwin-arm64": "server/dist/plugin-darwin-arm64",
+      "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+    }
+  },
+  "settings_schema": {
+    "settings": [
+      {
+        "key": "defaultnotifyondesktop",
+        "display_name": "default notify setting on desktop",
+        "type": "radio",
+        "options": [
+          {
+            "value": "all",
+            "display_name": "all"
+          },
+          {
+            "value": "mention",
+            "display_name": "mention and DM"
+          },
+          {
+            "value": "none",
+            "display_name": "none"
+          }
+        ],
+        "default": "all"
+      },
+      {
+        "key": "defaultnotifyonpush",
+        "display_name": "default notify setting on push",
+        "type": "radio",
+        "options": [
+          {
+            "value": "all",
+            "display_name": "all"
+          },
+          {
+            "value": "mention",
+            "display_name": "mention and DM"
+          },
+          {
+            "value": "none",
+            "display_name": "none"
+          }
+        ],
+        "default": "all"
+      }
+    ]
+  }
+}
